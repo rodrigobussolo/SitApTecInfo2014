@@ -12,6 +12,6 @@ A equipe contratada pela Contêxtil Ltda deverá pesquisar esses novos padrões 
 
 RESULTADOS/ENTREGAS ESPERADOS: 
 ==============================
- Portal hospedado em um servidor on-line. 
- Código fonte disponibilizado no Github. 
- Relatório de testes do Portal. 
+Portal hospedado em um servidor on-line. 
+Código fonte disponibilizado no Github. 
+Rlatório de testes do Portal. 
