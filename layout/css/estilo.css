@@ -1,0 +1,94 @@
+/* Created on: 21/10/2014, 19:28:21 Author: rodrigobussolo*/
+body{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (orientation: portrait){
+    /*Retrato - Vertical*/
+    .paisagem{display: none;}
+    .retrato{display: block;}
+}
+
+@media screen and (orientation: landscape){
+ /*Retrato - Vertical*/
+ .paisagem{display: block;}
+ .retrato{display: none;}
+}
+
+@media screen and (min-width: 1280px){
+    /* Largura mínima de 1280px */
+    section{
+        display: block;
+        margin: 0 auto; /* Centralização */
+        width: 1230px;
+        /* Borda só para debug */
+        border: 2px solid white;
+        padding-left: 18px;
+    }
+    figure{
+        width: 390px;
+        height: 300px;
+        float: left; /* manterá as imagens uma ao lado da outra */
+        border: 2px white solid;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px){
+    /* Largura mínima de 800px */
+    section{
+        display: block;
+        margin: 0 auto; /* Centralização */
+        width: 800px;
+        /* Borda só para debug */
+        border: 2px solid white;
+        padding-left: 18px;
+    }
+    figure{
+        width: 350px;
+        height: 280px;
+        float: left; /* manterá as imagens uma ao lado da outra */
+        border: 2px chartreuse solid;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 799px){
+    /* Largura mínima de 640px */
+    section{
+        display: block;
+        margin: 0 auto; /* Centralização */
+        width: 800px;
+        /* Borda só para debug */
+        border: 2px solid white;
+        padding-left: 18px;
+    }
+    figure{
+        width: 600px;
+        height: auto;
+        float: left; /* manterá as imagens uma ao lado da outra */
+        border: 2px yellow solid;
+        margin: 5px;
+    }
+}
+
+img{/* responsivo */
+    width: 90%; /* refere-se à figure */
+    height: 90%;
+    display: block;
+    margin: 5% auto; /* centraliza a imagem */
+}
+figcaption{
+    background-color: rgba(240,240,240,0.4);
+    height: 30px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;    
+}
+
+.fim{
+    clear: both; /* limpar a flutuação */
+}
