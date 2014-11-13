@@ -1,229 +1,89 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Prologue by HTML5 UP</title>
-		<meta http-equiv="content-type" content="text/html"; charset="utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-		<script src="<?php echo base_url('assets/js/jquery.scrolly.min.js'); ?>"></script>
-		<script src="<?php echo base_url('assets/js/jquery.scrollzer.min.js'); ?>"></script>
-		<script src="<?php echo base_url('assets/js/skel.min.js'); ?>"></script>
-		<script src="<?php echo base_url('assets/js/skel-layers.min.js'); ?>"></script>
-		<script src="<?php echo base_url('assets/js/init.js'); ?>"></script>
-		<noscript>
-			<link rel="stylesheet" href="<?php echo base_url('assets/css/skel.css'); ?>" />
-			<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>" />
-			<link rel="stylesheet" href="<?php echo base_url('assets/css/style-wide.css'); ?>" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="<?php echo base_url('assets/css/ie/v9.css'); ?>" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url('assets/css/ie/v8.css'); ?>" /><![endif]-->
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to CodeIgniter</title>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+	<style type="text/css">
 
-				<div class="top">
+	::selection{ background-color: #E13300; color: white; }
+	::moz-selection{ background-color: #E13300; color: white; }
+	::webkit-selection{ background-color: #E13300; color: white; }
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="<?php echo base_url('assets/images/avatar.jpg'); ?>" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
-						</div>
+	body {
+		background-color: #fff;
+		margin: 40px;
+		font: 13px/20px normal Helvetica, Arial, sans-serif;
+		color: #4F5155;
+	}
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+	a {
+		color: #003399;
+		background-color: transparent;
+		font-weight: normal;
+	}
 
-								2. Standard link (sends the user to another page/site)
+	h1 {
+		color: #444;
+		background-color: transparent;
+		border-bottom: 1px solid #D0D0D0;
+		font-size: 19px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 14px 15px 10px 15px;
+	}
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+	code {
+		font-family: Consolas, Monaco, Courier New, Courier, monospace;
+		font-size: 12px;
+		background-color: #f9f9f9;
+		border: 1px solid #D0D0D0;
+		color: #002166;
+		display: block;
+		margin: 14px 0 14px 0;
+		padding: 12px 10px 12px 10px;
+	}
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+	#body{
+		margin: 0 15px 0 15px;
+	}
+	
+	p.footer{
+		text-align: right;
+		font-size: 11px;
+		border-top: 1px solid #D0D0D0;
+		line-height: 32px;
+		padding: 0 10px 0 10px;
+		margin: 20px 0 0 0;
+	}
+	
+	#container{
+		margin: 10px;
+		border: 1px solid #D0D0D0;
+		-webkit-box-shadow: 0 0 8px #D0D0D0;
+	}
+	</style>
+</head>
+<body>
 
-		<!-- Main -->
-			<div id="main">
+<div id="container">
+	<h1>Welcome to CodeIgniter!</h1>
+        <h2>Alo Ha SENAI</h2>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+	<div id="body">
+		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
-							</header>
-							
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
+		<p>If you would like to edit this page you'll find it located at:</p>
+		<code>application/views/welcome_message.php</code>
 
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-							fusce hendrerit lacus ridiculus.</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic02.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic03.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic04.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic05.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic06.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="<?php echo base_url('assets/images/pic07.jpg'); ?>" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+		<p>The corresponding controller for this page is found at:</p>
+		<code>application/controllers/welcome.php</code>
 
-						</div>
-					</section>
+		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+	</div>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+</div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="<?php echo base_url('assets/images/pic08.jpg'); ?>" alt="" /></a>
-							
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
-							ornare iaculis.</p>
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra 
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-							
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-			
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				
-			</div>
-
-	</body>
+</body>
 </html>
