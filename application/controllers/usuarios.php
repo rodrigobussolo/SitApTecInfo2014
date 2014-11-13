@@ -21,7 +21,11 @@ class Usuarios extends CI_Controller {
         /**
          * Carrega a view
          */
-        $this->load->view('usuarios_view.php', $data);
+        //$this->load->view('usuarios_view.php', $data);
+
+        $this->load->view('home-header');
+        $this->load->view('home');
+        $this->load->view('home-footer');
     }
 
     public function info() {
@@ -64,7 +68,7 @@ class Usuarios extends CI_Controller {
             //Datas
             $data['dtcriacao'] = date('Y-m-d H:i:s');
             $data['dtnascimento'] = $this
-             ->converterDataParaMySql($data['dtnascimento']);
+                    ->converterDataParaMySql($data['dtnascimento']);
 
             /* Chama a função inserir do modelo */
             if ($this->usuarios_model->inserir($data)) {
@@ -84,8 +88,7 @@ class Usuarios extends CI_Controller {
         $data['dados_usuario'] = $this->usuarios_model->editar($id);
 
         //Convertendo a data para o padrão brasileiro
-        $data['dados_usuario'][0]->dtNascimento = 
-        $this->converteDataParaPadraoBrasileiro($data['dados_usuario'][0]->dtNascimento);
+        $data['dados_usuario'][0]->dtNascimento = $this->converteDataParaPadraoBrasileiro($data['dados_usuario'][0]->dtNascimento);
 
         /**
          * debug is on the table
@@ -99,7 +102,9 @@ class Usuarios extends CI_Controller {
          */
 
         /* Carrega a página de edição com os dados da usuario */
-        $this->load->view('usuarios_edit', $data);
+        $this->load->view('home-header');
+        $this->load->view('home-edit', $data);
+        $this->load->view('home-footer');
     }
 
     function atualizar() {
@@ -145,13 +150,13 @@ class Usuarios extends CI_Controller {
             $data['cep'] = $this->input->post('cep');
             $data['telefone'] = $this->input->post('telefone');
             $data['celular'] = $this->input->post('celular');
-            
+
             //Pegando a data de atualização
             $data['dtatualizacao'] = date('Y-m-d H:i:s');
-            
+
             //Convertendo a data para MySQL
             $data['dtnascimento'] = $this
-             ->converterDataParaMySql($data['dtnascimento']);
+                    ->converterDataParaMySql($data['dtnascimento']);
 
             /* Executa a função atualizar do modelo passando como parâmetro os dados obtidos do formulário */
             if ($this->usuarios_model->atualizar($data)) {
